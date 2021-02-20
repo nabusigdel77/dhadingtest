@@ -617,12 +617,12 @@ article.ds-about-post{
     margin:auto;
   }
   .ds-register .signup-form .row div:first-child {
-    padding-right: 15px;
+    padding-right: 15px !important;
 
   }
 
   .ds-register .signup-form .row div:last-child {
-    padding-left: 15px;
+    padding-left: 15px !important;
   }  
 
   .ds-register {
