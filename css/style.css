@@ -1,0 +1,719 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif ;
+    color: #222;
+    overflow-x:hidden;
+}
+
+/* scroll bar adjusted */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+
+
+
+
+
+
+
+.container-fluid{
+  max-width: 1690px;
+}
+
+
+.ds-navbar{
+   background-color:#FAFAFA!important ; 
+}
+
+.ds-navbar .navbar-brand img{
+  height: 200px;
+  top: -50%;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.ds-navbar li a{
+  color: var(--black);
+    font-family: 'Roboto', Helvetica, Arial, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+.ds-navbar li a.btn{
+  background-color:#2F35A2 ;
+  
+}
+.ds-navbar li.ds-nav-btn a{
+  background-color: #6B72FD;
+  color: rgb(164, 184, 221)!important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+.ds-navbar li a.btn:hover{
+  background-color: #2F35A2;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  transition: 0.8;
+  color: #fff!important;
+}
+
+.ds-navbar li.active a.btn{
+  background-color: #2F35A2;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  transition: 0.8;
+  color: #fff!important;
+}
+
+.navbar{
+    padding:.0;
+}
+
+.navbar-nav li{
+    padding-right: 20px;
+}
+
+.nav-link{
+    font-size: 1.1em !important;
+}
+
+.carousel-inner img{
+    width: 100%;
+    max-height: 590px;
+}
+
+
+
+footer{
+    color: #fff;
+    background-color: #1768AC;
+}
+
+footer hr.dhline{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(152 35 35);
+}
+
+footer .ds-footer-contact-info img{
+  max-width: 200px;
+  height: 200px;
+ border-radius: 50%;
+}
+footer table{
+  min-width: 430px;
+}
+/* footer table.table-responsive{
+  display:inline-table;
+  
+} */
+.kdtz-footer{
+  min-height:100px;
+  background-color: #f2f2f2;
+}
+.kdtz-footer a{
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  line-height: 100px;
+}
+
+.ds-social{
+    /* margin: auto; */
+    
+    background-color: #2F35A2;
+    background-image: linear-gradient( #6B72FD,  #2F35A2);
+    text-align:right;
+    
+}
+
+/* social media */  
+  
+  .ds-social span a {
+    height:2.1875rem;
+    width:2.1875rem;   
+    box-sizing: border-box;
+    text-decoration:none;
+    
+    
+  }
+  .ds-social span i.fab{
+    border-radius: 10%;
+    height: 2.1875rem;
+    width: 2.1875rem;
+  }
+  
+  .ds-social span i:hover.fab{
+    color: #363CAC;
+    background-color: #ffffff;
+   
+    /* top: 8px; */
+    line-height: 35px;
+    margin: auto;
+    text-align: center;
+    
+  }
+
+  .ds-social span a {
+    font-size:35px;
+    color: #fff;
+   
+  }
+  
+  
+  /* contact us */
+
+  .contact{
+    padding: 4%;
+    
+}
+
+
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    border-radius: 50%;
+    margin-bottom: 15%;
+    width: 100%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    
+    background-color: #026579;
+    border-color: #026579;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:hover{
+  color: #fff;
+  background:#06BEE1;
+    border-color: #06BEE1;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+
+/* team */
+.ds-team .card{
+  max-height: 100%;
+  
+}
+
+/* image gallery */
+
+.ds-image-gallery .nav-tabs a.nav-link:hover{
+    border-bottom: #fff solid 1px;
+}
+.ds-image-gallery nav ul li a{
+    max-width: 250px; 
+    color: #c1c1c1;
+    text-align: left; 
+    margin: auto;
+    padding: 1.1em !important;
+}
+.ds-image-gallery nav ul li a p{
+    padding: 5px 5px !important;
+}
+.ds-image-gallery nav ul li a.active h5{
+    border-bottom: rgb(247, 32, 32) solid 2px;
+}
+
+.ds-image-gallery a>img{
+    width:100%;
+    
+}
+
+:root {
+    /* Not my favorite that line-height has to be united, but needed */
+    --lh: 1.4rem;
+  }
+
+.truncate-overflow {
+    --max-lines: 6;
+    position: relative;
+    max-height: calc(var(--lh) * var(--max-lines));
+    overflow: hidden;
+    padding-right: 1rem; /* space for ellipsis */
+  }
+  .truncate-overflow::before {
+    position: absolute;
+    content: "...";
+    /* tempting... but shows when lines == content */
+    /* top: calc(var(--lh) * (var(--max-lines) - 1)); */
+    
+    /*
+    inset-block-end: 0;
+    inset-inline-end: 0;
+    */
+    bottom: 0;
+    right: 0;
+  }
+  .truncate-overflow::after {
+    content: "";
+    position: absolute;
+    /*
+    inset-inline-end: 0;
+    */
+    right: 0;
+    /* missing bottom on purpose*/
+    width: 1rem;
+    height: 1rem;
+    background: white;
+  }
+  .ds-navbar li a {
+    text-align: center;
+  }
+
+/* #homenews section */
+.ds-home-news1{
+  background-color:#EFEFEF;
+  min-height:200px;
+}
+
+/* adjusting news height */
+.ds-home-news{
+  position: relative;
+  overflow:auto;
+  max-height:590px;
+}
+
+
+/* news list design */
+
+.ds-news-list img{
+  max-width: 162px;;
+}
+
+
+/* ads */
+.ds-adsection img{
+  width: 100%;
+  max-height:200px
+
+}
+/* team message limitation */
+.ds-team-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+
+}
+
+footer .ds-fb-redirect img.ds-profile{
+  max-width: 50px;
+  background-color:rgb(145, 145, 145);
+  border-radius:50%;
+}
+
+footer .ds-fb-redirect .ds-fb-content{
+background-color:#fff;
+min-height: 100px;
+max-height: 300px;
+overflow: hidden;
+
+}
+footer .ds-fb-content p{
+  color:#000;
+  text-align: left;
+  
+}
+footer .ds-footer-fb-overflow{
+  overflow-y:auto;
+  overflow-x:hidden;
+  max-width:400px;
+  max-height: 400px;
+  margin:auto;
+}
+footer table{
+  color: #fff!important;
+}
+
+/* about us page */
+
+.ds-about-main img{
+  max-height: 600px;
+  width: 100%;;
+}
+.ds-about-img{
+  width: 100%;
+  max-width:700px;
+}
+article.ds-about-post{
+  max-height: 600px;
+  margin:auto;
+}
+
+
+.ds-about-side-img img{
+  max-width: 280px;
+  max-height: 280px;
+}
+.ds-side-img2 img{
+  width: 100%;
+  max-height: 280px;
+}
+
+
+
+/* register form */
+.ds-register{
+  background-color:#EFEFEF ;
+  margin-top: -4%;
+  padding-top: 3%;
+  margin-bottom: -4%;
+  padding-bottom: 3%;
+}
+.ds-register .form-control, .ds-register .custom-file-label {
+	height: 40px;
+	box-shadow: none;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 0;
+}
+.ds-register .form-control:focus {
+	border-color: #2F35A2;
+}
+
+.ds-register .signup-form {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 30px 0;
+  	font-size: 15px;
+}
+.ds-register .signup-form h2 {
+	color: #000000;
+	margin: 0 0 15px;
+	position: relative;
+	text-align: center;
+}
+
+.ds-register .signup-form h2:before {
+	left: 0;
+}
+.ds-register .signup-form h2:after {
+	right: 0;
+}
+.ds-register .signup-form .hint-text {
+	color: #000;
+	margin-bottom: 30px;
+	text-align: left;
+}
+.ds-register .signup-form .hint-text a{
+	color:rgba(6,190,225,1.0);
+	
+}
+
+.ds-register .signup-form form {
+	color: #000;
+	border-radius: 5%;
+	margin-bottom: 15px;
+	background: #fff;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+.ds-register .signup-form .form-group {
+	margin-bottom: 20px;
+}
+.ds-register .signup-form input[type="checkbox"] {
+	margin-top: 3px;
+}
+.ds-register .signup-form .btn {        
+	font-size: 16px;
+	font-weight: bold;		
+	min-width: 140px;
+	outline: none !important;
+}
+.ds-register .signup-form .row div:first-child {
+	padding-right: 10px;
+}
+.ds-register .signup-form .row div:last-child {
+	padding-left: 10px;
+}    	
+.ds-register .signup-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+.ds-register .signup-form a:hover {
+	text-decoration: none;
+}
+.ds-register .signup-form form a {
+	color: #2F35A2;
+	text-decoration: none;
+}	
+.ds-register .signup-form form a:hover {
+	text-decoration: underline;
+}  
+
+.ds-register .signup-form .btn{
+  background-color: rgba(6,190,225,1.0);
+  border-color: rgba(6,190,225,1.0);
+  border-radius: 0;
+
+}
+
+.ds-register .signup-form .btn:hover{
+  background-color: #026579;
+    border-color: #026579;
+    border-radius: 0;
+  
+}
+
+.ds-register .custom-chk-input:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+
+
+
+  /* LESS THAN 75 */
+@media (max-width: 74.9em) {
+  .ds-navbar .navbar-brand img{
+    height: 200px;
+    top: -50%;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .ds-home-news{
+    max-height: 440px;
+  }
+  article.ds-about-post{
+    max-height: 100%;
+    margin:auto;
+  }
+  .ds-about-side-img img{
+    max-width: 190px;
+    
+  }
+  .ds-team .card{
+    max-height: 350px;
+    overflow-y: auto;
+  }
+}
+
+/* LESS THAN 62 */
+@media (max-width: 61.9em) { 
+  .ds-navbar .navbar-brand img{
+    height: 90px;
+    /* top: 0%; */
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%
+  }
+  /* social media */  
+  
+  .ds-social span a {
+    height:2rem;
+    width:2rem;   
+    box-sizing: border-box;
+    text-decoration:none;
+    
+    
+  }
+  .ds-social span i.fab{
+    border-radius: 10%;
+    height: 2rem;
+    width: 2rem;
+  }
+  .ds-social span i:hover.fab{  
+    /* top: 8px; */
+    line-height: 2rem;
+    
+  }
+
+  .ds-news-list img{
+    max-width: 115px;;
+  }
+  .ds-home-news{
+    max-height: 425px;
+  }
+  article.ds-about-post{
+    max-height: 100%;
+    margin:auto;
+  }
+  .ds-about-side-img img{
+    max-width: 128px;
+    
+  }
+  
+  .ds-team .card{
+    max-height: 350px;
+    overflow-y: auto;
+  }
+  
+ }
+
+/* LESS THAN 48 */
+@media (max-width: 47.9em) { 
+  .ds-navbar .navbar-brand img{
+    height: 50px;
+    top: 0%;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  /* social media */  
+  
+  .ds-social span a {
+    height:2rem;
+    width:2rem;   
+    box-sizing: border-box;
+    text-decoration:none;
+    
+    
+  }
+  .ds-social span i.fab{
+    border-radius: 10%;
+    height: 2rem;
+    width: 2rem;
+  }
+  .ds-social span i:hover.fab{  
+    /* top: 8px; */
+    line-height: 2rem;
+    
+    
+  }
+
+  /* navbar button */
+  .navbar-nav li {
+    padding-right: 0px;
+  }
+  .navbar-nav li a.btn{
+  margin-bottom: 5px;
+  min-width: 200px;
+  }
+
+  .ds-news-list img{
+    max-width: 115px;;
+  }
+  article.ds-about-post{
+    max-height: 100%;
+    margin:auto;
+  }
+  .ds-register .signup-form .row div:first-child {
+    padding-right: 15px;
+
+  }
+
+  .ds-register .signup-form .row div:last-child {
+    padding-left: 15px;
+  }  
+
+  .ds-register {
+    background-color: #EFEFEF;
+    margin-top: 0%;
+    padding-top: 3%;
+    margin-bottom: -20%;
+    padding-bottom: 0%;
+  }
+  .ds-about-side-img img {
+    max-width: 275px;
+}
+.kdtz-footer a {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  line-height: 100px;
+}
+.ds-team .card{
+  max-height: 100%;
+  overflow-y: None;
+}
+}
+
+/* LESS THAN 34 */
+@media (max-width: 33.9em) { 
+  .ds-navbar .navbar-brand img{
+    height: 50px;
+    top: 0%;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  /* social media */  
+  
+  .ds-social span a {
+    height:2rem;
+    width:25rem;   
+    box-sizing: border-box;
+    text-decoration:none;
+    
+    
+  }
+  .ds-social span i.fab{
+    border-radius: 10%;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .ds-social span i:hover.fab{  
+    /* top: 8px; */
+    line-height: 2rem;
+    
+    
+  }
+
+/* navbar button */
+.navbar-nav li {
+    padding-right: 0px;
+}
+.navbar-nav li a.btn{
+  margin-bottom: 5px;
+}
+
+
+/* news list design */
+
+.ds-news-list img{
+  max-width: 115px;;
+}
+
+article.ds-about-post{
+  max-height: 100%;
+  margin:auto;
+}
+.ds-about-side-img img {
+  max-width: 100%;
+  max-height: 280px;
+  
+}
+.ds-about-side-img .float-right{
+  float:none!important;
+}
+.ds-register {
+  background-color: #EFEFEF;
+  margin-top: 0%;
+  padding-top: 3%;
+  margin-bottom: -10%;
+  padding-bottom: 0%;
+}
+
+
+
+ }
+
