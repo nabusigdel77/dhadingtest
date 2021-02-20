@@ -45,6 +45,7 @@ html, body{
   position: absolute;
   background-color: #fff;
   border-radius: 50%;
+  box-shadow: 1px 2px 1px 2px rgb(201, 201, 201);
 }
 .ds-navbar li a{
   color: var(--black);
