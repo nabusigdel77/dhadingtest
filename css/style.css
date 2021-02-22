@@ -23,7 +23,9 @@ html, body{
 }
 
 
-
+.ds-team-block{
+  display:table;
+}
 
 
 
@@ -31,16 +33,16 @@ html, body{
 
 
 .container-fluid{
-  max-width: 1690px;
+  max-width: 1440px;
 }
 
 
 .ds-navbar{
-   background-color:#e0e0e0!important ; 
+   background-color:#f4f4ff!important ; 
 }
 
 .ds-navbar .navbar-brand img{
-  height: 200px;
+  height: 160px;
   top: -50%;
   position: absolute;
   background-color: #fff;
@@ -59,10 +61,11 @@ html, body{
   
 }
 .ds-navbar li.ds-nav-btn a{
-  background-color: #6B72FD;
-  color: rgb(164, 184, 221)!important;
+  background-color: #2F35A2;
+  color:#fff!important;
   padding-left: 25px !important;
   padding-right: 25px !important;
+  white-space: nowrap;
 }
 .ds-navbar li a.btn:hover{
   background-color: #2F35A2;
@@ -78,6 +81,7 @@ html, body{
   padding-right: 25px !important;
   transition: 0.8;
   color: #fff!important;
+  white-space: nowrap;
 }
 
 .navbar{
@@ -85,7 +89,7 @@ html, body{
 }
 
 .navbar-nav li{
-    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .nav-link{
@@ -216,11 +220,6 @@ footer table{
     box-shadow:none;
 }
 
-/* team */
-.ds-team .card{
-  max-height: 100%;
-  
-}
 
 /* image gallery */
 
@@ -230,7 +229,7 @@ footer table{
 .ds-image-gallery nav ul li a{
     max-width: 250px; 
     color: #c1c1c1;
-    text-align: left; 
+    text-align: center; 
     margin: auto;
     padding: 1.1em !important;
 }
@@ -316,11 +315,7 @@ footer table{
 }
 /* team message limitation */
 .ds-team-text{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4; /* number of lines to show */
-    -webkit-box-orient: vertical;
+    text-align: center;
 
 }
 
@@ -487,6 +482,19 @@ article.ds-about-post{
   background-color: #ccc;
 }
 
+/* match height pure css */
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  flex-grow: 1;
+}
+
+.row.display-flex .card{
+  height:100%
+}
 
 
 
@@ -511,9 +519,12 @@ article.ds-about-post{
     max-width: 190px;
     
   }
-  .ds-team .card{
-    max-height: 350px;
-    overflow-y: auto;
+  .ds-register {
+    background-color: #EFEFEF;
+    margin-top: -6%;
+    padding-top: 4%;
+    margin-bottom: -5%;
+    padding-bottom: 3%;
   }
 }
 
@@ -561,11 +572,13 @@ article.ds-about-post{
     max-width: 128px;
     
   }
+  .ds-register {
+    background-color: #EFEFEF;
+    margin-top: -8%;
+    padding-top: 9%;
+    margin-bottom: -8%;
+    padding-bottom: 8%;
   
-  .ds-team .card{
-    max-height: 350px;
-    overflow-y: auto;
-  }
   
  }
 
@@ -641,10 +654,7 @@ article.ds-about-post{
   font-weight: 500;
   line-height: 100px;
 }
-.ds-team .card{
-  max-height: 100%;
-  overflow-y: None;
-}
+
 }
 
 /* LESS THAN 34 */
