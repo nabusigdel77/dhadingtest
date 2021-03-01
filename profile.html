@@ -13,33 +13,35 @@
 
     </head>
     <body>
-        <!-- socialmedia -->
-        <div class="ds-social">
+       <!-- social media -->
+       <div class="ds-social">
+        <div class="container-fluid">
             <div class="row padding">
                 <div class="col-12">
                     
-                    <div class="pt-sm-3 pb-sm-3 sm-0 mr-sm-5 mr-0">
+                    <div class="pt-sm-3 pb-sm-3">
                     
-                            <span class="mr-5"><a href="#"><i class="fab fa-facebook-square" ></i></a></span>
-                            <span class="mr-5"><a href="#"><i class="fab fa-instagram" ></i></a></span>
-                            <span class="mr-5"><a href="#"><i class="fab fa-youtube-square" ></i></a></span>
+                            <span class="mr-1"><a href="#"><i class="fab fa-facebook-square" ></i></a></span>
+                            <span class="mr-1"><a href="#"><i class="fab fa-instagram" ></i></a></span>
+                            <span class="mr-1"><a href="#"><i class="fab fa-youtube-square" ></i></a></span>
                     
                     </div>      
                 
                 </div>
             </div>
         </div>
+    </div>
         
         <!-- Navigation -->
         <nav class="ds-navbar navbar navbar-expand-md navbar-light sticky-top mb-0 mb-sm-5">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="img/finallogo.png"></a>
+                <a class="navbar-brand" href="index.html"><img src="img/finallogo.png"></a>
                 <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse mt-4 mb-4" id = "navbarResponsive">
-                    <ul class="navbar-nav ml-auto mr-sm-5 sm-0">
-                        <li class="nav-item active">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
@@ -51,11 +53,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
-                        <li class="nav-item ds-nav-btn m-auto">
-                            <a class="nav-link btn btn-lg" href="register">Register</a>
+                        <li class="nav-item m-auto">
+                            <a class="nav-link " href="profile.html"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="my-pic" class="ds-nav-pic rounded-circle" width="150"></a>
                         </li>
                         <li class="nav-item ds-nav-btn m-auto">
-                            <a class="nav-link btn btn-lg" href="signin">Sign in</a>
+                            <a class="nav-link btn" href="#index">Log Out</a>
                         </li>
 
                     </ul>
@@ -63,163 +65,594 @@
                 </div>
             </div>
         </nav>
-    
-        <!-- profile -->
-        <div class="container">
-            <div class="main-body">            
-                  <div class="row gutters-sm">
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="d-flex flex-column align-items-center text-center">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
-                            <div class="mt-3">
-                              <h4>Shree Ram Sigdel</h4>
-                              <p class="text-secondary mb-1">Member</p>
-                              <p class="text-muted font-size-sm">Hakata,Fukuoka, Japan</p>
-                              
+
+        <!-- responsive tab -->
+        <div class="container-fluid">
+       
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="myprofile-tab" data-toggle="tab" href="#myprofile" role="tab" aria-controls="myprofile" aria-selected="true">MySelf</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="editprofile-tab" data-toggle="tab" href="#editprofile" role="tab" aria-controls="editprofile" aria-selected="false">Edit</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="uploadbills-tab" data-toggle="tab" href="#uploadbills" role="tab" aria-controls="uploadbills" aria-selected="false">Bills</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="changepassword-tab" data-toggle="tab" href="#changepassword" role="tab" aria-controls="changepassword" aria-selected="false">Change Password</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="myprofile" role="tabpanel" aria-labelledby="myprofile-tab">
+                <!-- profile -->
+                <div class="mt-2">
+                  <div class="main-body">            
+                        <div class="row gutters-sm">
+                          <div class="col-md-4 mb-3">
+                            <div class="card">
+                              <div class="card-body">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                  <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                                  <div class="mt-3">
+                                    <h4>Shree Ram Sigdel</h4>
+                                    <p class="text-secondary mb-1">Member</p>
+                                    <p class="text-muted font-size-sm">Hakata,Fukuoka, Japan</p>
+                                    
+                                  </div>
+                                </div>
+                              </div>
                             </div>
+                            
                           </div>
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card mb-3">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col-sm-3">
-                              <h6 class="mb-0">Full Name</h6>
+                          <div class="col-md-8">
+                            <div class="card mb-3">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <h6 class="mb-0">Full Name</h6>
+                                  </div>
+                                  <div class="col-sm-9 text-secondary">
+                                    Shree Ram Sigdel
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <h6 class="mb-0">Email</h6>
+                                  </div>
+                                  <div class="col-sm-9 text-secondary">
+                                    example@gmail.com
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <h6 class="mb-0">D.O.B</h6>
+                                  </div>
+                                  <div class="col-sm-9 text-secondary">
+                                    1990-11-02
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <h6 class="mb-0">Mobile</h6>
+                                  </div>
+                                  <div class="col-sm-9 text-secondary">
+                                    090-XXXX-XXXX
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <h6 class="mb-0">Address</h6>
+                                  </div>
+                                  <div class="col-sm-9 text-secondary">
+                                  ABC Building (Room No 203) 4-7-45 Katakasu Hakata-Ku Fukoka-Shi Japan
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div class="col-sm-9 text-secondary">
-                              Shree Ram Sigdel
-                            </div>
-                          </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-3">
-                              <h6 class="mb-0">Email</h6>
-                            </div>
-                            <div class="col-sm-9 text-secondary">
-                              example@gmail.com
-                            </div>
-                          </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-3">
-                              <h6 class="mb-0">D.O.B</h6>
-                            </div>
-                            <div class="col-sm-9 text-secondary">
-                              1990-11-02
-                            </div>
-                          </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-3">
-                              <h6 class="mb-0">Mobile</h6>
-                            </div>
-                            <div class="col-sm-9 text-secondary">
-                              090-XXXX-XXXX
-                            </div>
-                          </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-3">
-                              <h6 class="mb-0">Address</h6>
-                            </div>
-                            <div class="col-sm-9 text-secondary">
-                             ABC Building (Room No 203) 4-7-45 Katakasu Hakata-Ku Fukoka-Shi Japan
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row gutters-sm">
-                        <div class="col-sm-12 mb-3">
-                          <div class="card h-100">
-                            <div class="card-body">
-                              <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Personal Identification Image</i></h6>
-                              <img src= "img/passport-sample.jpg" class="img-fluid">
-                              
+                            <div class="row gutters-sm">
+                              <div class="col-sm-12 mb-3">
+                                <div class="card h-100">
+                                  <div class="card-body">
+                                    <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Personal Identification Image</i></h6>
+                                    <img src= "img/passport-sample.jpg" class="img-fluid">
+                                    
+                                  
+                                  </div>
+                                </div>
+                              </div>
                             
                             </div>
                           </div>
                         </div>
-                      
                       </div>
+                </div> 
+            </div>
+            <div class="tab-pane fade" id="editprofile" role="tabpanel" aria-labelledby="editprofile-tab">
+                <!-- edit profile -->
+                <div class="ds-edit-profile">   
+                  <div class="signup-form card mt-2 mb-2 p-2 p-sm-5">
+                    <form action="">
+                        <h4 class="text-left">Edit Profile</h4>
+                        <!-- bootstrap-imageupload. -->
+                        <div class="form-group">
+                            <div class="ds-profile-pre">
+                                <div class="picture-container">
+                                    <div class="picture">
+                                        <img src="img/svg/profile-default.svg" class="picture-src" id="wizardPicturePreview" title="">
+                                        <input type="file" id="wizard-picture" class="">
+                                    </div>
+                                    <img src="img/svg/camera.svg" class="edit-tab" id="" title="">
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-4 pr-sm-0 pr-3"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 mt-3 mt-md-0"><input type="text" class="form-control" name="middle_name" placeholder="Middle Name" required="required"></div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 mt-3 mt-md-0 pl-sm-0 pr-3"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+                            </div>        	
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="date">Date of Birth</label>
+                            <input class="form-control" id="date" name="date" placeholder="MM/DDYYYY" type="date">
+                            
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" name="mobile no" placeholder="Mobile Number" pattern="[0-9]{11}" required="required">
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-4 pr-sm-0 pr-3 mb-3 mb-sm-0"><input type="number" maxlength="7" minlength="7" class="form-control" name="postal-code" placeholder="Postal Code" required="required"></div>
+                                <div class="col-xs-12 col-sm-12 col-md-8 "><input type="text" class="form-control" name="address" placeholder="Address" required="required"> </div>
+                            </div>  
+                        </div>
+                                      
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-lg btn-block">Save Changes</button>
+                        </div>
+                    </form>  
+                 </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="uploadbills" role="tabpanel" aria-labelledby="uploadbills-tab">
+              
+              <div class="row ml-1 mr-1 mt-2">
+                <div class="col-md-6 ds-bills-upload m-auto card mb-2">
+                  <div class="ds-edit-profile pt-2">
+                    <h4 class= "mb-3">Upload Bills/Recipts</h4>
+                    <form class="signup-form mt-0">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="title" placeholder="Title" required="required">
+                      </div>
+
+                      <div class="form-group">
+                        <textarea class="form-control" rows="3" placeholder="Message...."></textarea>
+                      </div>
+
+
+
+                      <div id="msg"></div>
+                      
+                        <input type="file" name="img[]" class="file" accept="image/*">
+                        <div class="input-group my-3">
+                          <input type="text" class="form-control" disabled placeholder="Upload File" id="file">
+                          <div class="input-group-append">
+                            <button type="button" class="browse btn btn-primary">Browse...</button>
+                          </div>
+                        </div>
+                                              
+                    <div class=>
+                      <img src="https://placehold.it/120x120" id="preview" class="img-thumbnail">
                     </div>
+
+                    <div class="form-group mt-2">
+                      <button type="submit" class="btn btn-success btn-lg btn-block" href="#">Upload Bills</button>
+                    </div>
+                    </form>
                   </div>
                 </div>
-            </div>
+                <div class="col-md-6 ds-edit-profile ds-modal-preview m-auto mt-2 mt-md-0 card ">      
+                  <div class="table-responsive pt-2">
+                    <h4 class="mb-3">Preview Uploaded Bills/recipts</h4>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Title</th>
+                          <th scope="col">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>2021/11/2</td>
+                          <td>Tihar</td>
+                          <td>
+                            <a class="btn btn-sm btn-success" data-toggle="modal" data-target="#previewcontents">
+                              View
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>2022/11/2</td>
+                          <td>Dashain</td>
+                          <td>
+                            <a class="btn btn-sm btn-success" data-toggle="modal" data-target="#previewcontents1">
+                              View
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>2023/11/1</td>
+                          <td>Holi</td>
+                          <td>
+                            <a class="btn btn-sm btn-success" data-toggle="modal" data-target="#previewcontents2">
+                              View
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                    <!-- Modal 1-->
+                    <div class="modal fade" id="previewcontents" tabindex="-1" role="dialog" aria-labelledby="previewcontentsTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="viewmodaltitle">Title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="card">
+                              <div class="card-body">
+                                <p>2021/11/2</p>
+                                <img src="img\dummy-news-pic.jpg" class="img-fluid">
+                                
+                                <p>
+                                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
+                                </p>
+                                
 
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal 2 -->
+                    <div class="modal fade" id="previewcontents1" tabindex="-1" role="dialog" aria-labelledby="previewcontentsTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="viewmodaltitle">Title2</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="card">
+                              <div class="card-body">
+                                <p>2022/11/2</p>
+                                <img src="img\dummy-news-pic.jpg" class="img-fluid">
+                                
+                                <p>
+                                But the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
+                                </p>
+                                
+
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal 3 -->
+                    <div class="modal fade" id="previewcontents2" tabindex="-1" role="dialog" aria-labelledby="previewcontentsTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="viewmodaltitle">Holi</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="card">
+                              <div class="card-body">
+                                <p>2023/11/1</p>
+                                <img src="img\dummy-news-pic.jpg" class="img-fluid">
+                                
+                                <p>
+                                But the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
+                                </p>
+                                
+
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+           
+            </div>
+            <div class="tab-pane fade" id="changepassword" role="tabpanel" aria-labelledby="changepassword-tab">
+              <div class="tabbable mt-2">
+                <div class="ds-edit-profile ">   
+                    
+              
+                          <div class="signup-form card p-3 p-sm-5 mt-2">
+                              <form action="" method="post">
+                                  
+                                  <div class="form-group">
+                                      <input type="password" class="form-control" name="old-password" placeholder="Old Password" required="required">
+                                  </div>
+                                                        
+                                  <div class="form-group">  
+                                      <input type="password" class="form-control" name="new-password" placeholder="New Password" required="required">                           
+                                  </div>
+                                  <div class="form-group">  
+                                      <input type="password" class="form-control" name="confirm-new-password" placeholder="Confirm New Password" required="required">                           
+                                  </div>
+                                  
+                                  <div class="form-group">
+                                      <button type="submit" class="btn btn-success btn-lg btn-block">Save Changes</button>
+                                  </div>
+                              </form>
+                              
+                          </div>
+              
+                    
+              
+                </div>
+              </div>
+            </div>        
+          </div>
+        </div>
 
         <!-- footer -->
-        <footer class="mt-5">
-            <div class="container-fluid padding">
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <img class = "bg-white" src="img/logo1.png">
-                        <hr class="dhline">
-                        <p>090-XXXX-XXXX</p>
-                        <p>email@gmail.com</p>
-                        <p>x-xx- x Chome</p>
-                        <p>Tokyo,Japan, XXX-XXXX</p>
-                    </div>
+        <footer class="mt-5 pt-5">
+          <div class="container-fluid padding mt-5">
+              <div class="row text-center">
+                  <div class="col-md-4 ds-footer-contact-info">
+                      <h2 class="mb-5">Contact Info</h2>
+                      <img class = "bg-white mb-3" src="img/finallogo.png">
+                      
+                      <p>090-XXXX-XXXX</p>
+                      <p>email@gmail.com</p>
+                      <p>x-xx- x Chome</p>
+                      <p>Tokyo,Japan, XXX-XXXX</p>
+                  </div>
 
-                    <div class="col-md-4">
-                        <hr class="dhline">
-                        Sponsored By:
-                        <hr class="dhline">
-                        <p>Abc co. pvt. ltd</p>
-                        <p>Rahul Store co. pvt. ltd</p>
-                        <p>xyz co. pvt. ltd</p>
-                        
-                    </div>
+                  <div class="col-md-4 ">
+                      <div class="ds-fb-redirect">
+                          <h2 class="mb-5">Recent Facebook</h2>
+                          <div class="ds-footer-fb-overflow">
+                              <div class="row mb-5">
+                                  <div class="col-sm-12">
+                                      <span class="float-left mr-2">
+                                          <img class="ds-profile img-fluid" src="img/head.png">
+                                      </span>
+                                      <span class="float-left text-left">
+                                          <h5 class="m-0 p-0">Name Surname</h5>
+                                          <p class="m-0 p-0"><small>@johndoe • 49s</small></p>
 
-                    <div class="col-md-4">
-                        <hr class="dhline">
-                        Covered Area
-                        <hr class="dhline">
-                        <table class="table table-responsive table-hover">
-                            <thead>
+                                      </span>
+                                      <span class=" float-right">
+                                          <i class="fas fa-ellipsis-v"></i>
+                                      </span>
+                                  </div>
+                                  <div class="col-sm-12 ds-fb-content p-5 mt-5">
+                                      <span class="float-left mr-4">
+                                          <img src="img/post-img.png" class="img-fluid">
+                                      </span>
+
+                                      <span class="">
+                                          <p class="pl-5">
+                                              Name Surname Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                          </p>
+                                      </span>
+
+                                  </div>
+                                  <div class="col-sm-12 mt-2">
+                                      <div class="mr-5">
+                                          <span class="float-left mr-2">
+                                              <i class="fas fa-heart"></i>
+                                          </span>
+                                          <span class="float-left mr-5">
+                                              90
+                                          </span>
+                                      
+                                          <span class="float-left mr-2">
+                                              <i class="far fa-comment-dots"></i>
+                                          </span>
+                                          <span class="float-left mr-5">
+                                              78
+                                          </span>
+                                      </div>
+
+
+                                  </div>
+                              </div>
+
+                              <div class="row mb-5">
+                                  <div class="col-sm-12">
+                                      <span class="float-left mr-2">
+                                          <img class="ds-profile img-fluid" src="img/head.png">
+                                      </span>
+                                      <span class="float-left text-left">
+                                          <h5 class="m-0 p-0">Name Surname</h5>
+                                          <p class="m-0 p-0"><small>@johndoe • 49s</small></p>
+
+                                      </span>
+                                      <span class=" float-right">
+                                          <i class="fas fa-ellipsis-v"></i>
+                                      </span>
+                                  </div>
+                                  <div class="col-sm-12 ds-fb-content p-5 mt-5">
+                                      <span class="float-left mr-4">
+                                          <img src="img/post-img.png" class="img-fluid">
+                                      </span>
+
+                                      <span class="">
+                                          <p class="pl-5">
+                                              Name Surname Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                          </p>
+                                      </span>
+
+                                  </div>
+                                  <div class="col-sm-12 mt-2">
+                                      <div class="mr-5">
+                                          <span class="float-left mr-2">
+                                              <i class="fas fa-heart"></i>
+                                          </span>
+                                          <span class="float-left mr-5">
+                                              90
+                                          </span>
+                                      
+                                          <span class="float-left mr-2">
+                                              <i class="far fa-comment-dots"></i>
+                                          </span>
+                                          <span class="float-left mr-5">
+                                              78
+                                          </span>
+                                      </div>
+
+
+                                  </div>
+                              </div>
+
+                              <div class="row mb-5">
+                                  <div class="col-sm-12">
+                                      <span class="float-left mr-2">
+                                          <img class="ds-profile img-fluid" src="img/head.png">
+                                      </span>
+                                      <span class="float-left text-left">
+                                          <h5 class="m-0 p-0">Name Surname</h5>
+                                          <p class="m-0 p-0"><small>@johndoe • 49s</small></p>
+
+                                      </span>
+                                      <span class=" float-right">
+                                          <i class="fas fa-ellipsis-v"></i>
+                                      </span>
+                                  </div>
+                                  <div class="col-sm-12 ds-fb-content p-5 mt-5">
+                                      <span class="float-left mr-4">
+                                          <img src="img/post-img.png" class="img-fluid">
+                                      </span>
+
+                                      <span class="">
+                                          <p class="pl-5">
+                                              Name Surname Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                          </p>
+                                      </span>
+
+                                  </div>
+                                  <div class="col-sm-12 mt-2">
+                                      <div class="mr-5">
+                                          <span class="float-left mr-2">
+                                              <i class="fas fa-heart"></i>
+                                          </span>
+                                          <span class="float-left mr-5">
+                                              90
+                                          </span>
+                                      
+                                          <span class="float-left mr-2">
+                                              <i class="far fa-comment-dots"></i>
+                                          </span>
+                                          <span class="float-left mr-5">
+                                              78
+                                          </span>
+                                      </div>
+
+
+                                  </div>
+                              </div> 
+
+                          </div>
+                      
+                      </div>
+                                              
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-4">
+                      
+                      <h2 class="mb-5 text-center">Covered Area</h2>
+                      
+                      <div class="w-100 table-responsive">
+                          <table class="table">
+                              <thead>
                               <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Area</th>
-                                <th scope="col">Representative</th>
-                                <th scope="col">Contact Number</th>
+                                  <th scope="col">#</th>
+                                  <th scope="col">Area</th>
+                                  <th scope="col">Representative</th>
+                                  <th scope="col">Contact Number</th>
                               </tr>
-                            </thead>
-                            <tbody>
+                              </thead>
+                              <tbody>
                               <tr>
-                                <th scope="row">1</th>
-                                <td>Tokyo</td>
-                                <td>Shree Ram Sigdel</td>
-                                <td>090-xxxx-xxxx</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Fukuoka</td>
-                                <td>Shree Ram Sigdel</td>
-                                <td>090-xxxx-xxxx</td>
+                                  <th scope="row">1</th>
+                                  <td>Tokyo</td>
+                                  <td>Shree Ram Sigdel</td>
+                                  <td>090-xxxx-xxxx</td>
                               </tr>
                               <tr>
-                                <th scope="row">3</th>
-                                <td>Nagoya</td>
-                                <td>Shree Ram Sigdel</td>
-                                <td>090-xxxx-xxxx</td>
+                                  <th scope="row">2</th>
+                                  <td>Fukuoka</td>
+                                  <td>Shree Ram Sigdel</td>
+                                  <td>090-xxxx-xxxx</td>
                               </tr>
-                            </tbody>
+                              <tr>
+                                  <th scope="row">3</th>
+                                  <td>Nagoya</td>
+                                  <td>Shree Ram Sigdel</td>
+                                  <td>090-xxxx-xxxx</td>
+                              </tr>
+                              </tbody>
                           </table>
-                        
-                    </div>
+                      </div>
+                      
+                  </div>
 
-                    <div class="col-12">
-                        <hr class="dhline">
-                        <h5>&copy; kdtz.com</h5>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        
+                 
+              </div>
+          </div>
+      </footer>
+      <div class=" kdtz-footer">
+          <div class="row">
+             <div class="col-sm-12">
+                  <h5 class="text-center"><a href="#">&copy; kdtz.com All Rights Reserved.</a></h5>
+              </div>
+          </div>
+      </div>
                
     </body>
     <!-- <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script> -->
@@ -227,6 +660,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="plugins/bootstrap-4.5.3-dist/js/bootstrap.bundle.js" ></script>
     <!-- <script type="text/javascript"　src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-    <script src="/js/ds-js.js"></script>
+    <script src="js/ds-js.js"></script>
     
 </html>

@@ -4,7 +4,6 @@ html, body{
     font-family: 'Poppins', sans-serif ;
     color: #222;
     overflow-x:hidden;
-	background-color:#fff;
 }
 
 /* scroll bar adjusted */
@@ -28,19 +27,113 @@ html, body{
   display:table;
 }
 
+/* profilepic */
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+#img-upload{
+  width: 100%;
+}
 
 
+/*Profile Pic Start*/
+.ds-profile-pre .picture-container{
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+.ds-profile-pre .picture{
+  width: 140px;
+  height: 140px;
+  position: relative;
+  background-color: #ececec;
+  border: 4px solid #e8e8e8;
+  color: #FFFFFF;
+  border-radius: 50%;
+  margin: 0px auto;
+  overflow: hidden;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.ds-profile-pre .picture:hover{
+  border-color: #2ca8ff;
+}
+.ds-profile-pre .content.ct-wizard-green .picture:hover{
+  border-color: #05ae0e;
+}
+.ds-profile-pre .content.ct-wizard-blue .picture:hover{
+  border-color: #3472f7;
+}
+.ds-profile-pre .content.ct-wizard-orange .picture:hover{
+  border-color: #ff9500;
+}
+.ds-profile-pre .content.ct-wizard-red .picture:hover{
+  border-color: #ff3b30;
+}
+.ds-profile-pre .picture input[type="file"] {
+  cursor: pointer;
+  display: block;
+  height: 200px;
+  left: 0;
+  opacity: 0 !important;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+}
 
+.ds-profile-pre .picture-src{
+  width: 100%;
+  height:100%;
+  
+}
+
+.ds-profile-pre .picture-container .edit-tab{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  color: #0080ff;
+  top: 0;
+  opacity: 0.4;
+  border-radius: 50%;
+  border: solid 1px #3e3e3e;
+  padding: 5px;
+  margin-left: 25px;
+}
 
 
 .container-fluid{
-  max-width: 1440px;
+  max-width: 1360px;
 }
 
 
 .ds-navbar{
    background-color:#f4f4ff!important ; 
 }
+
+.ds-navbar .btn {
+  line-height: 1;
+}
+
 
 .ds-navbar .navbar-brand img{
   height: 160px;
@@ -54,8 +147,7 @@ html, body{
   color: var(--black);
     font-family: 'Roboto', Helvetica, Arial, serif;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
+    
 }
 .ds-navbar li a.btn{
   background-color:#2F35A2 ;
@@ -67,6 +159,7 @@ html, body{
   padding-left: 25px !important;
   padding-right: 25px !important;
   white-space: nowrap;
+  font-size: 12px;
 }
 .ds-navbar li a.btn:hover{
   background-color: #2F35A2;
@@ -76,7 +169,7 @@ html, body{
   color: #fff!important;
 }
 
-.ds-navbar li.active a.btn{
+.ds-navbar li.active a.ds-nav-btn{
   background-color: #2F35A2;
   padding-left: 25px !important;
   padding-right: 25px !important;
@@ -93,9 +186,6 @@ html, body{
     padding-left: 20px;
 }
 
-.nav-link{
-    font-size: 1.1em !important;
-}
 
 .carousel-inner img{
     width: 100%;
@@ -164,10 +254,7 @@ footer table{
   }
   
   .ds-social span i:hover.fab{
-    color: #363CAC;
-    background-color: #ffffff;
-   
-    /* top: 8px; */
+   color: #fff;
     line-height: 35px;
     margin: auto;
     text-align: center;
@@ -179,8 +266,22 @@ footer table{
     color: #fff;
    
   }
-  
-  
+  /* bills upload */
+.ds-bills-upload{
+  max-width: 500px;
+}
+
+.ds-bills-upload .file {
+  visibility: hidden;
+  position: absolute;
+}
+
+.ds-bills-upload img{
+  width: 100%;
+  height: 100%;
+}
+
+
   /* contact us */
 
   .contact{
@@ -314,6 +415,32 @@ footer table{
   max-height:200px
 
 }
+.ds-adsection .carousel-item-next.carousel-item-left,
+.ds-adsection .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+     }
+     .ds-adsection .carousel-item-next,
+     .ds-adsection .active.carousel-item-right {
+       -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+     }
+     .ds-adsection .carousel-item-prev,
+     .ds-adsection .active.carousel-item-left {
+     -webkit-transform: translate3d(0, +100%, 0);
+            transform: translate3d(0, +100, 0);
+     }
+
+
+/* ds nav profile pic  */
+.ds-nav-pic{
+  width: 27px;
+  border: 50%;
+  border: 1px solid;
+  padding: 1px;
+}
+
+
 /* team message limitation */
 .ds-team-text{
     text-align: center;
@@ -380,51 +507,51 @@ article.ds-about-post{
 .ds-register{
   background-color:#EFEFEF ;
   margin-top: -4%;
-  padding-top: 3%;
+  padding-top: 3%;    
   margin-bottom: -4%;
   padding-bottom: 3%;
 }
-.ds-register .form-control, .ds-register .custom-file-label {
+.ds-edit-profile .form-control, .ds-edit-profile .custom-file-label, .ds-register .form-control, .ds-register .custom-file-label {
 	height: 40px;
 	box-shadow: none;
   color: #000;
   border: 2px solid #000;
   border-radius: 0;
 }
-.ds-register .form-control:focus {
+.ds-edit-profile .form-control:focus, .ds-register .form-control:focus {
 	border-color: #2F35A2;
 }
 
-.ds-register .signup-form {
-	max-width: 500px;
+.ds-edit-profile .signup-form,.ds-register .signup-form {
+	max-width: 700px;
 	margin: 0 auto;
-	padding: 30px 0;
+	padding: 0;
   	font-size: 15px;
 }
-.ds-register .signup-form h2 {
+.ds-edit-profile .signup-form h2,.ds-register .signup-form h2 {
 	color: #000000;
 	margin: 0 0 15px;
 	position: relative;
 	text-align: center;
 }
 
-.ds-register .signup-form h2:before {
+.ds-edit-profile .signup-form h2:before,.ds-register .signup-form h2:before {
 	left: 0;
 }
-.ds-register .signup-form h2:after {
+.ds-register .signup-form h2:after,.ds-edit-profile .signup-form h2:after {
 	right: 0;
 }
-.ds-register .signup-form .hint-text {
+.ds-register .signup-form .hint-text,.ds-edit-profile .signup-form .hint-text {
 	color: #000;
 	margin-bottom: 30px;
 	text-align: left;
 }
-.ds-register .signup-form .hint-text a{
+.ds-register .signup-form .hint-text a,.ds-edit-profile .signup-form .hint-text a{
 	color:rgba(6,190,225,1.0);
 	
 }
 
-.ds-register .signup-form form {
+.ds-register .signup-form form{
 	color: #000;
 	border-radius: 5%;
 	margin-bottom: 15px;
@@ -432,16 +559,28 @@ article.ds-about-post{
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 	padding: 30px;
 }
-.ds-register .signup-form .form-group {
+
+
+
+.ds-edit-profile .signup-form form {
+	color: #000;
+	border-radius: 0;
+	margin-bottom: 15px;
+	background: #fff;
+	
+}
+
+
+.ds-register .signup-form .form-group, .ds-edit-profile .signup-form .form-group {
 	margin-bottom: 20px;
 }
 .ds-register .signup-form input[type="checkbox"] {
 	margin-top: 3px;
 }
-.ds-register .signup-form .btn {        
+.ds-register .signup-form .btn,.ds-edit-profile .signup-form .btn {        
 	font-size: 16px;
 	font-weight: bold;		
-	min-width: 140px;
+	min-width: 100px;
 	outline: none !important;
 }
 .ds-register .signup-form .row div:first-child {
@@ -465,14 +604,20 @@ article.ds-about-post{
 	text-decoration: underline;
 }  
 
-.ds-register .signup-form .btn{
+.ds-register .signup-form .btn,.ds-edit-profile .signup-form .btn{
   background-color: rgba(6,190,225,1.0);
   border-color: rgba(6,190,225,1.0);
   border-radius: 0;
 
 }
 
-.ds-register .signup-form .btn:hover{
+
+.ds-edit-profile textarea.form-control{
+  height:100%;
+}
+
+
+.ds-register .signup-form .btn:hover,.ds-edit-profile .signup-form .btn:hover{
   background-color: #026579;
     border-color: #026579;
     border-radius: 0;
@@ -481,6 +626,17 @@ article.ds-about-post{
 
 .ds-register .custom-chk-input:hover input ~ .checkmark {
   background-color: #ccc;
+}
+
+/* modal preview */
+.ds-modal-preview .card-body{
+  max-width: 400px;
+  margin: auto;
+}
+
+.ds-modal-preview{
+  max-width: 500px;
+ height: 100%;
 }
 
 /* match height pure css */
@@ -520,7 +676,7 @@ article.ds-about-post{
     max-width: 190px;
     
   }
-  .ds-register {
+  .ds-register{
     background-color: #EFEFEF;
     margin-top: -6%;
     padding-top: 4%;
@@ -573,7 +729,7 @@ article.ds-about-post{
     max-width: 128px;
     
   }
-  .ds-register {
+  .ds-register{
     background-color: #EFEFEF;
     margin-top: -8%;
     padding-top: 9%;
@@ -640,7 +796,7 @@ article.ds-about-post{
     padding-left: 15px !important;
   }  
 
-  .ds-register {
+  .ds-register{
     background-color: #EFEFEF;
     margin-top: -8%;
     padding-top: 3%;
@@ -717,13 +873,14 @@ article.ds-about-post{
 .ds-about-side-img .float-right{
   float:none!important;
 }
-.ds-register {
+.ds-register{
   background-color: #EFEFEF;
   margin-top: 0%;
   padding-top: 3%;
   margin-bottom: -15%;
   padding-bottom: 3%;
 }
+
 .ds-news-list p{
   max-width: 200px;
   margin: auto;
@@ -732,3 +889,4 @@ article.ds-about-post{
 
  }
 
+}
